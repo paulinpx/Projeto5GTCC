@@ -1,3 +1,0 @@
-configuration:
-  ngapIpList:  # the IP list of N2 interfaces on this AMF
-    - amf.n2.org
