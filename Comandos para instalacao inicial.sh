@@ -8,7 +8,8 @@ Preparação:
 https://github.com/free5gc/gtp5g
 
 apt -y update
-apt -y install gcc g++ cmake autoconf libtool pkg-config libmnl-dev libyaml-dev bridge-utils
+apt -y install git gcc g++ cmake autoconf libtool pkg-config libmnl-dev libyaml-dev bridge-utils build-essential
+apt-get -y install linux-headers-$(uname -r)
 
 #Atualize as dependências do kernel:
 depmod -a
@@ -32,5 +33,3 @@ lsmod | grep gtp5g
 ##Instalando Docker:
 #Rode o script shell
 bash docker_install.sh
-
-
